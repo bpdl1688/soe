@@ -1,6 +1,7 @@
 #!/bin/bash
 # run under user fedora
 # please include hostname parameter
+# You might need to install git first to get the repo
 
 # Update sources
 sudo dnf update -y
