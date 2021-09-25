@@ -7,7 +7,7 @@
 sudo dnf update -y
 
 # my SOP
-sudo dnf install wget tmux vim bind-utils git -y
+sudo dnf install wget tmux vim bind-utils nfs-utils git -y
 
 ########################################
 # basic setup
