@@ -7,7 +7,10 @@
 sudo dnf update -y
 
 # my SOP
-sudo dnf install wget tmux vim bind-utils nfs-utils git -y
+sudo dnf install -y wget tmux vim bind-utils nfs-utils git
+
+# this is used for tereraform/libvirt
+sudo dnf install -y genisoimage
 
 ########################################
 # basic setup
