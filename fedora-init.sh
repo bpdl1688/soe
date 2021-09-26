@@ -18,6 +18,9 @@ echo "config timezone"
 sudo timedatectl set-timezone Asia/Singapore
 echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > ~/.vimrc
 
+# avoid visual mode in vim
+echo "set mouse-=a" >> ~/.vimrc
+
 echo "config hostname"
 sudo hostnamectl set-hostname $1
 
