@@ -18,7 +18,7 @@ echo "config system"
 
 echo "config timezone"
 sudo timedatectl set-timezone Asia/Singapore
-sudo echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > ~/.vimrc
+sudo echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > /root/.vimrc
 echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > ~/.vimrc
 
 echo "config hostname"
@@ -37,7 +37,12 @@ sudo hostnamectl set-hostname $HOSTNAME
 # sudo systemctl enable docker
 
 # podman (optional)
-sudo dnf install podman -y
+# sudo dnf install podman -y
+
+# include ideadpad
+# sudo echo "192.168.1.106    ideapad" >> /etc/hosts
+# mkdir -p /mnt/ideapad
+# mount -t nfs ideapad: /mnt/ideapad
 
 # echo "rebooting..."
 # reboot
