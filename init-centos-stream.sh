@@ -18,7 +18,7 @@ echo "config system"
 
 echo "config timezone"
 sudo timedatectl set-timezone Asia/Singapore
-sudo echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > /root/.vimrc
+# sudo echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > /root/.vimrc
 echo "autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab" > ~/.vimrc
 
 echo "config hostname"
